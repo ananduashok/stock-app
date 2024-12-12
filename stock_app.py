@@ -4,6 +4,8 @@ Created on Wed Dec 11 06:18:46 2024
 
 @author: aoa
 """
+import appdirs as ad
+ad.user_cache_dir = lambda *args: "/tmp"
 
 import yfinance as yf
 import streamlit as st
